@@ -11,3 +11,6 @@ Your data never goes anywhere.
 - Chat with documents
 - Paste URL to summarise a webpage (as long as the page is static HTML)
 - Save conversations as markdown documents
+
+# Free up memory. Enjoy VIC-20 today.
+
