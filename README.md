@@ -1,4 +1,4 @@
-# Ollama16K.github.io
+# Ollama16K
 
 A private Javascript based Ollama frontend weighing only 16 kilobytes in size. 
 
