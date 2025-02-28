@@ -1,6 +1,6 @@
-# Ollama16K
+# Ollama VIC-20
 
-A private Javascript based Ollama frontend weighing only 16 kilobytes in size. 
+A private Javascript based Ollama frontend weighing less than 20 kilobytes in size. 
 
 Simply run OLLAMA_ORIGINS=* ollama serve to get started and launch the webpage locally.
 
