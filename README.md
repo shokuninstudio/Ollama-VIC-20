@@ -8,6 +8,6 @@ Your data never goes anywhere.
 
 # Features
 
-- Markdown support
 - Chat with documents
-- Fetch and summarise a URL (as long as the page is static HTML)
+- Paste URL to summarise a webpage (as long as the page is static HTML)
+- Save conversations as markdown documents
