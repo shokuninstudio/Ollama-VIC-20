@@ -1,7 +1,10 @@
 # Ollama16K.github.io
-A Javascript based Ollama frontend weighing only 16 kilobytes in size. 
 
-Simply run OLLAMA_ORIGINS=* ollama serve to get started and launch the webpage locally or from your web host.
+A private Javascript based Ollama frontend weighing only 16 kilobytes in size. 
+
+Simply run OLLAMA_ORIGINS=* ollama serve to get started and launch the webpage locally.
+
+Your data never goes anywhere.
 
 # Features
 
