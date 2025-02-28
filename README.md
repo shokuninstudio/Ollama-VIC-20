@@ -8,7 +8,7 @@ Your data never goes anywhere.
 
 # Features
 
-- Chat with documents
+- Chat with supported text documents
 - Paste URL to summarise a webpage (as long as the page is static HTML)
 - Save conversations as markdown documents
 
