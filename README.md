@@ -1,6 +1,6 @@
 # Ollama VIC-20
 
-Ollama VIC-20 is a private ultra lightweight frontend for chatting only and designed to stay under 20 kilobytes on disk.
+Ollama VIC-20 is a private ultra lightweight frontend for Ollama and designed to stay under 20 kilobytes on disk. 
 
 # Description
 
