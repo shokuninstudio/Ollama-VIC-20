@@ -136,6 +136,24 @@ body {
     background-color: #0056b3;
 }
 
+.save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
 .document-message {
     display: flex;
     align-items: center;

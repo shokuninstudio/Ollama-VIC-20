@@ -14,6 +14,9 @@ class ChatApp {
         this.fileInput.addEventListener('change', (e) => this.handleFileUpload(e.target.files));
         this.currentMessageId = 0;
 
+        this.saveButton = document.getElementById('saveButton');
+        this.saveButton.addEventListener('click', () => this.saveConversation());
+
         // Initialize models
         this.loadModels();
     }
@@ -252,6 +255,54 @@ class ChatApp {
             });
             this.modelSelect.innerHTML = `<option disabled>Error: ${error.message}</option>`;
         }
+    }
+
+    saveConversation() {
+        console.log('Save button clicked'); // Add this line to verify the method is being called
+        // Convert all messages to markdown
+        let markdown = '';
+        const messages = this.messageList.children;
+        
+        for (const message of messages) {
+            const content = message.querySelector('.message-content');
+            const role = message.classList.contains('user-message') ? 'User' : 
+                        message.classList.contains('assistant-message') ? 'Assistant' : 'System';
+            
+            // Skip empty messages
+            if (!content.textContent.trim()) continue;
+            
+            markdown += `## ${role}\n\n`;
+            
+            // For system messages, just add the text content
+            if (role === 'System') {
+                markdown += `${content.textContent.trim()}\n\n`;
+                continue;
+            }
+            
+            // For user and assistant messages, preserve the original markdown
+            const rawContent = content.innerHTML;
+            // Convert code blocks back to markdown
+            const processedContent = rawContent
+                .replace(/<pre><code class="language-(\w+)">/g, '```$1\n')
+                .replace(/<\/code><\/pre>/g, '\n```\n')
+                .replace(/<code>/g, '`')
+                .replace(/<\/code>/g, '`')
+                .replace(/<[^>]+>/g, ''); // Remove any remaining HTML tags
+            
+            markdown += `${processedContent}\n\n`;
+        }
+
+        // Create and trigger download
+        const blob = new Blob([markdown], { type: 'text/markdown' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        a.href = url;
+        a.download = `conversation-${timestamp}.md`;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
     }
 }
 
