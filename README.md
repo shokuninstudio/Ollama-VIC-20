@@ -14,3 +14,4 @@ Your data never goes anywhere.
 
 # Free up memory. Enjoy VIC-20 today.
 
+[![temp-Imaged-Zu0-SD.avif](https://i.postimg.cc/Y9R7bmVP/temp-Imaged-Zu0-SD.avif)](https://postimg.cc/628FQTBV)
