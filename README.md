@@ -10,11 +10,19 @@ Why? I had noticed some Ollama frontends were becoming bloated, were not private
 
 # Usage
 
-Simply run OLLAMA_ORIGINS=* ollama serve to get started and launch the webpage locally.
+On macOS or Linux simply run 'OLLAMA_ORIGINS=* ollama serve' to get started
 
-Your data never goes anywhere. 
+```
+OLLAMA_ORIGINS=* ollama serve
+```
 
-*'ollama serve' configuration may differ across platforms. 
+Or just 'ollama serve' on Windows if your environmental variables have been set up.
+
+```
+ollama serve
+```
+
+Then open the webpage locally to chat. 
 
 # Features
 
