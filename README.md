@@ -2,9 +2,17 @@
 
 A private Javascript based Ollama frontend weighing less than 20 kilobytes in size on disk.
 
+# Description
+
+Ollama VIC-20 is an ultra lightweight frontend for chatting only and designed to stay under 20 kilobytes. Its purpose is to give users a no install frontend that easily lets conversations be saved as a markdown document with one click. 
+
+Why? I had noticed some Ollama frontends were becoming bloated, were not private when they claimed to be, were not showing users where conversations were being stored, and were not deleting conversations from disk after the user thought they were deleted. Ollama VIC-20 resolves that problem by not storing conversations on disk at all unless a user saves the conversation manually.
+
+# Usage
+
 Simply run OLLAMA_ORIGINS=* ollama serve to get started and launch the webpage locally.
 
-Your data never goes anywhere.
+Your data never goes anywhere. 
 
 *'ollama serve' configuration may differ across platforms. 
 
